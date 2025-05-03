@@ -2,9 +2,13 @@
 tải các phần mềm sau :
 https://github.com/webosbrew/dev-manager-desktop/releases
 https://www.mediafire.com/file/x7qgbikaab6vz6z/alpine.bin/file
-nhập lệnh
-1:chmod +x
-2:#!/bin/sh
+nhập lệnh(coppy toàn bộ)
+.......................................
+
+
+
+
+#!/bin/sh
 Setting the chroot directory
 CHROOT_DIR="/tmp/alpine"
 ALPINE_TAR="alpine-minirootfs-3.21.3-armhf.tar.gz"
@@ -37,6 +41,11 @@ Enter chroot
 echo "Entering chroot..."
 exec chroot "$CHROOT_DIR" /bin/sh
 
+
+
+
+
+...............................
 
 
 
