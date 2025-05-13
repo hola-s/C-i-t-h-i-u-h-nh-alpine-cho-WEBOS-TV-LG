@@ -2,7 +2,7 @@
 tải các phần mềm sau :
 https://github.com/webosbrew/dev-manager-desktop/releases
 https://www.mediafire.com/file/x7qgbikaab6vz6z/alpine.bin/file
-
+ssh vào tv của bạn và chạy lệnh
 
 
 
