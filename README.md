@@ -7,6 +7,7 @@ ssh vào tv của bạn và chạy lệnh
 
 ...............................
 aarch64:view file
+update file :27/8/2025
 
 
 
