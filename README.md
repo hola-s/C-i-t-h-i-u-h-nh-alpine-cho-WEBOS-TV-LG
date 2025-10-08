@@ -1,13 +1,12 @@
 đảm bảo tv đã được root chạy kiến trúc armhf/armv7/aarch64 [ xem webosbrew.org]
 tải các phần mềm sau:
-https://github.com/webosbrew/dev-manager-desktop
-ssh vào tv của bạn và chạy lệnh
+
 
 
 
 ...............................
 aarch64:view file
-update file :27/8/2025
+update file :8/10/2025
 
 
 
