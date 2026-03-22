@@ -4,9 +4,9 @@
 CHROOT_DIR="/tmp/alpine-armhf"
 ALPINE_BASE_URL="https://dl-cdn.alpinelinux.org/alpine/latest-stable/releases/armhf"
 
-# Lấy tên file mới nhất cho armhf (ARMv7)
+# Lấy tên file mới nhất cho armhf (ARMv7) từ file YAML chính thức
 echo "Fetching latest Alpine version for ARMv7 (armhf)..."
-ALPINE_TAR=$(wget -qO- "$ALPINE_BASE_URL/" | grep -o 'alpine-minirootfs-[0-9.]\+-armhf\.tar\.gz' | sort -V | tail -n 1)
+ALPINE_TAR=$(wget -qO- "$ALPINE_BASE_URL/latest-releases.yaml" | grep -o 'alpine-minirootfs-[0-9.]\+-armhf\.tar\.gz' | head -n 1)
 
 if [ -z "$ALPINE_TAR" ]; then
     echo "Error: Cannot fetch latest Alpine version for armhf."
