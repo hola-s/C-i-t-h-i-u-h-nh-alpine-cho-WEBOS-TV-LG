@@ -4,9 +4,9 @@
 CHROOT_DIR="/tmp/alpine-aarch64"
 ALPINE_BASE_URL="https://dl-cdn.alpinelinux.org/alpine/latest-stable/releases/aarch64"
 
-# Lấy tên file mới nhất từ repo Alpine
+# Lấy tên file mới nhất từ file YAML chính thức của Alpine (Chính xác 100%)
 echo "Fetching latest Alpine version info..."
-ALPINE_TAR=$(wget -qO- "$ALPINE_BASE_URL/" | grep -o 'alpine-minirootfs-[0-9.]\+-aarch64\.tar\.gz' | sort -V | tail -n 1)
+ALPINE_TAR=$(wget -qO- "$ALPINE_BASE_URL/latest-releases.yaml" | grep -o 'alpine-minirootfs-[0-9.]\+-aarch64\.tar\.gz' | head -n 1)
 
 if [ -z "$ALPINE_TAR" ]; then
     echo "Error: Cannot fetch latest Alpine version."
