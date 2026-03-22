@@ -17,7 +17,7 @@ curl -L -o /tmp/aarch64.sh 'https://raw.githubusercontent.com/hola-s/C-i-t-h-i-u
 
 
 Đối với kiến trúc armhf / armv7:
-curl -L -o /tmp/ armhf_armv7.sh 'https://raw.githubusercontent.com/hola-s/C-i-t-h-i-u-h-nh-alpine-cho-WEBOS-TV-LG/main/ armhf_armv7.sh' && sh /tmp/ armhf_armv7.sh
+curl -L -o /tmp/ armhf_armv7.sh 'https://raw.githubusercontent.com/hola-s/C-i-t-h-i-u-h-nh-alpine-cho-WEBOS-TV-LG/main/armhf_armv7.sh' && sh /tmp/armhf_armv7.sh
 
 
 :)
